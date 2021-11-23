@@ -40,4 +40,4 @@ app.use(express.json());
         console.log(error);
     }
 })();
-app.listen(3001, () => console.log("Listening on PORT 3001"));
+app.listen(process.env.PORT || 3001, () => console.log("Listening on PORT 3001"));
